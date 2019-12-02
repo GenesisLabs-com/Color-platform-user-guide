@@ -1,21 +1,23 @@
-## Install Color
+### <b>How to create new wallet </b>
 
-This guide will explain how to install the `colord` and `colorcli` entrypoints onto your system. With these installed on a server, you can participate in the mainnet as either a Full Node or a Validator
+To create new wallet click on `Sign in` Button. </br>
+Now click on `Create a new address`.
 
-### Install Go
+![Create wallet](images/Create-wallet.png) </br>
+Enter your desired account name, and password (atleast 10 characters required). And click on Create Address button. </br>
 
-Install `go` by following the [official docs](https://golang.org/doc/install). Remember to set your `$GOPATH` and `$PATH` environment variables, for example:
 
-```bash
-mkdir -p $HOME/go/bin
-echo "export GOPATH=$HOME/go" >> ~/.bash_profile
-echo "export PATH=\$PATH:\$GOPATH/bin" >> ~/.bash_profile
-source ~/.bash_profile
-```
+> _NOTE_: **Save your seed phrase somewhere safe** ,as it is the only way to recover your wallet.
 
-::: tip
-**Go 1.12+** is required.
-:::
+
+### <b>Import/Recover Account </b>
+
+Users can import or recover their wallet using their seed phrase/mnemonic. </br>
+To recover account click on `Sign in`, then select `Recover with backup code`. </br>
+
+![Recover account](images/recover.png) </br>
+
+Now enter your desired account name, password and the seed phrase of the account you want to recover/import. 
 
 ### Install the binaries
 
@@ -69,3 +71,15 @@ To test any changes made in the SDK or Tendermint, a `replace` clause needs to b
 ### Next
 
 Now you can [create you own testnet](./colord.md)
+
+
+```bash
+mkdir -p $HOME/go/bin
+echo "export GOPATH=$HOME/go" >> ~/.bash_profile
+echo "export PATH=\$PATH:\$GOPATH/bin" >> ~/.bash_profile
+source ~/.bash_profile
+```
+
+::: tip
+**Go 1.12+** is required.
+:::

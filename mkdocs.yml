@@ -1,6 +1,6 @@
-site_name: Color Project Docs
+site_name: Color-Platform User Guides
 nav:
-    - Installation: index.md
+    - Web-Wallet: index.md
     - ColorCLI: colorcli.md
     - ColorDaemon: colord.md
     - Faucet: faucet.md
